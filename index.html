@@ -13,7 +13,7 @@
 
         var qjcs =0;//二维码状态
 
-        var bm ='浙江传媒学院/学生/电视艺术学院/影视摄影与制作（电视摄像）/18影视摄影与制作（电视摄像）1班';//二维码状态
+        var bm ='浙江传媒学院/学生/学员名学院/专业名/班级 班';//二维码状态
         $(window).load(function () {
             //if (qjcs >= 2) {
             //    $('#button2').attr("disabled", true);
@@ -148,21 +148,23 @@
 				<span class="max-sk-nz-zt" style="margin-top: 20px;">姓名：罗熹流</span>
 				<span class="max-sk-nz-zt">班级：18影视摄影与制作（电视摄像）1班</span>
                 
+                <span class="max-sk-nz-sj" style="display:block;width: 100%;height: 70px;color: #000000;font-size: 110px;text-align: center;font-weight: bold;float: left;margin-top:30px;"  id="rq">
+                    <script type="text/javascript">var date = new Date(); document.write((date.getMonth() + 1) + "月" + date.getDate() + "日" + " " + " ".charAt(date.getDay()));</script>
+                
+                    
+                </span>
 
-                <span class="max-sk-nz-sj" style="display:block;width: 100%;height: 70px;color: #000000;;text-align: center;font-weight: bold;float: left;margin-top: 20px;" id="rq">
+                <span class="max-sk-nz-sj" style="display:block;width: 100%;height: 65px;color: #000000;;text-align: center;font-weight: bold;float: left;margin-top: 20px;" id="sj">
                     <a href="https://time.is/Hangzhou" id="time_is_link" rel="nofollow" style="font-size:110px"></a>
                     <span id="Hangzhou_z43d" style="font-size:100px"></span>
                     <script src="//widget.time.is/zh.js"></script>
                     <script>
-                    time_is_widget.init({Hangzhou_z43d:{template:"DATE<br>TIME", date_format:"monthnamednum日"}});
+                    time_is_widget.init({Hangzhou_z43d:{template:"TIME", date_format:"monthnamednum日"}});
                     </script>
                     </span>
                 </br>
                 
-                <span class="max-sk-nz-sj" style="display:block;width: 100%;height: 110px;color: #000000;font-size: 110px;text-align: center;font-weight: bold;float: left;margin-top:30px;"  id="sj">
-                
-                    
-                </span>
+
             
 
                 <div id="datetime">
@@ -174,12 +176,13 @@
 					<div class="ewm"><img id="viewConttainer1" style="width:100%;height:100%" src='./qrcode.png'></div><!-- 二维码 -->
 			    </div>
               
-				<span class="max-sk-nz-ztss" style="margin-top: 10px;font-size:35px;margin-bottom:30px;">通行时间：2021-11-05 08:19-2021/11/5 22:30:00</span>
+				<span class="max-sk-nz-ztss" style="margin-top: 10px;font-size:35px;margin-bottom:30px;">
+                    通行时间：<script type="text/javascript">var date = new Date(); document.write("" + date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + " " + " ".charAt(date.getDay()));</script>08:19-<script type="text/javascript">var date = new Date(); document.write("" + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + " " + " " + " ".charAt(date.getDay()));</script> 22:30:00</span>
 				
                 <button class="anniu" id="button1" onclick="window.location.href = 'http://ehall.cuz.edu.cn:7705/steppages/pview.aspx?p=浙传学生外出请假审批'" style="margin-top: 30px;display:block;">报备申请</button>
 
                   <button class="anniu1" id="button2" onclick="window.location.href = 'http://ehall.cuz.edu.cn:7705/steppages/pview.aspx?p=浙传学生外出请假审批&ismsp=1'" style="display:block;">免审批报备</button>
-                <button class="anniu1" id="button3" onclick="window.location.href = 'http://ehall.cuz.edu.cn:7705/Pages/Detail.aspx?ID=068de453bd214c6c847e5f305bbf37f0'" style="display:none;" >学期结束离校</button>
+                <button class="anniu1" id="button3" onclick="window.location.href = 'http://ehall.cuz.edu.cn:7705/steppages/pview.aspx?p=浙传学生外出请假审批'" style="display:block;" >出省报备</button>
 
                 <span class="max-sk-nz-ztss" style="margin-top: 30px;display:block" >健康码为绿码</span>
 
